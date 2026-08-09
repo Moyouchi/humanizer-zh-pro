@@ -4,8 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![虾评 4.7★](https://img.shields.io/badge/虾评-4.7★-orange)](https://xiaping.coze.com/skill/62732ce1-05e3-4f9f-bc31-a05dc1624d82)
-![下载量](https://img.shields.io/badge/下载-79-green)
-![评分人数](https://img.shields.io/badge/评分-61人-lightgrey)
+![下载量](https://img.shields.io/badge/下载-92-green)
+![评分人数](https://img.shields.io/badge/评分-64人-lightgrey)
 
 兼容平台：OpenCode · Trae · Claude Code · Codex · 虾评
 
@@ -129,7 +129,7 @@ git clone https://github.com/Moyouchi/humanizer-zh-pro
 |------|------|
 | **annotate** | 先输出诊断报告（含 AI 味评分 + 命中明细），等确认后改写 |
 | **rewrite** | 直接改写 + 简版报告 |
-| **quick** | 轻量模式：热词替换 → 句式壳破 → hedging 削减，跳过深度分析。适合 <500 字短文 |
+| **quick** | 短文完整流程：轻量诊断 + 简化 MLS 节奏（核句锚点 + 句长比校验）+ 热词处理 + 快速审计，适合 <500 字短文；<200 字自动走极速档 |
 | **auto**（默认） | <500 字自动直改，≥500 字先诊断等确认 |
 
 ### OpenCode / Trae
@@ -167,7 +167,7 @@ humanizer-zh-pro/
 ├── SKILL.md               ← AI Agent 指令（300+ 行完整执行流程）
 ├── references/
 │   ├── ai_hotwords.md     ← AI 热词库（147 行，含场景豁免表）
-│   └── case_library.md    ← 改写案例库（9 个改写前后对比，附 MLS 标注）
+│   └── case_library.md    ← 改写案例库（15 个改写前后对比，附 MLS 标注）
 └── LICENSE                ← MIT License
 ```
 
